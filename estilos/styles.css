@@ -22,14 +22,17 @@ header{
     align-items: center;
 }
 .logo{
+   
     margin:1rem;
 }
 .submenu{
+    
     display: flex;
     align-items: center;
-    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .menu{
+   
     list-style: none;
 }
 .menu li{
@@ -53,10 +56,12 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .fila{
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
@@ -65,9 +70,10 @@ h2{
 .fila img{
   max-height: 90%;
   max-width: 90%;
-  
-  
+    
 }
+  
+
 
 footer{
     display: flex;
@@ -76,4 +82,26 @@ footer{
     text-align: center;
     align-items: center;
     min-height: 150px;
+}
+
+@media (max-width: 768px){ 
+    header{
+        flex-direction: column;
+    }
+    .menu li{
+        display: block;
+        padding: 5px;
+    }
+    .fila{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .fila img{
+        flex-grow: 1;
+        flex-basis: auto;
+        flex-shrink: 1;
+        padding: 5px;
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
