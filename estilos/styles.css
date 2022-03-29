@@ -31,6 +31,15 @@ header{
     align-items: center;
     padding-right: 1rem;
 }
+input{
+    border: none;
+    margin:0 3px
+}
+input::placeholder{
+    color: white;
+    font-weight: bold;
+    
+}
 .menu{
    
     list-style: none;
