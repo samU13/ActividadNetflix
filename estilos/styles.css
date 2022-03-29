@@ -76,8 +76,8 @@ h2{
     gap: 10px;
     
 }
-.fila img{
-    max-width: 100%;
+.fila>img{
+    flex: 1;
 } 
 
 
